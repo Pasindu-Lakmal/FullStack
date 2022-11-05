@@ -8,8 +8,10 @@ import EnterData from "./pages/EnterData";
 function App() {
   return (
     <div className="App">
-      <Link to="/">Home Page</Link>
-      <Link to="/createpost">Create A Post</Link>
+      <div className="navbar">
+        <Link to="/">Home Page</Link>
+        <Link to="/createpost">Create A Post</Link>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/createpost" element={<CreatePost />} />
