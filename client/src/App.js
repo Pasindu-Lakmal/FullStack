@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { Routes, Route, Link } from "react-router-dom";
 import CreatePost from "./pages/CreatePost";
 import EnterData from "./pages/EnterData";
+import Post from "./pages/Post";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/createpost" element={<CreatePost />} />
-        <Route path="/enterData" element={EnterData} />
+        <Route path="/enterData" element={<EnterData />} />
+        <Route path="post/:id" element={<Post />} />
       </Routes>
     </div>
   );
